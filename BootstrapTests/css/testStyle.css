@@ -1,0 +1,87 @@
+body{
+    background-color: rgb(255,255,255);
+    font-size: 100%;
+    font-family: acumin-pro, sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    margin: 0px;
+    padding: 0px;
+}
+
+h1{
+    text-align: center;
+}
+h2{
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.container-fluid{
+        background-color: rgb(250,150,50);  
+}
+
+/* -------navigation----------------- */
+.navbar{
+    background-color: rgb(50,50,50);
+}
+.navbar-nav li a:link{
+  color: #ffffff;
+}
+.navbar-nav li a:visited{
+  color: #ffffff;
+}
+
+.navbar-nav li a:hover {
+  color: #1abc9c !important;
+}
+/* -----centered image-------------- */
+
+.tripleImage{
+    width:75%;
+    margin:auto;
+    background-color: rgb(250,150,50);
+}
+
+.imageBox{
+    outline: 5px solid rgb(200,200,200);
+    outline-offset: -10px;
+    width:100%;
+    position: relative;
+    padding: 0px;
+    text-align: center;
+}
+
+
+.myCentreText{
+    color: white;
+    font-size: 1.5em;
+    font-weight: bolder;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translate(0%, -50%);
+    width:90%;  
+}
+
+
+
+@media screen and (min-width: 576px) {
+ 
+    .myCentreText{
+     font-size: 5em;   
+    } 
+    
+    .imageBox{
+        width:75%;
+        max-width: 700px;
+    }
+    
+    .formBox{
+        width:75%;
+        background-color: rgb(255,255,255);
+    }
+    
+      
+}
+

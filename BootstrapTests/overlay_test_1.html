@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Overlay Test One</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<style>
+    body{
+        font-size: 100%;
+    }
+
+/*-----------------------------------------------*/
+/*-- top style --*/
+/* -- allows the column to be targeted for the hover */
+/* -- and pad the column element --*/
+    .over-set{
+        border: 0px solid green;
+        padding: 2em;
+    }
+/*-- single title overlay -- */
+    .text-overlay{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: 0px solid pink;
+        font-size: 2em;
+        color:white;
+        background-color: rgb(12, 30, 44);
+        transition: .5s ease;
+        opacity: 1;
+        padding:0.2em;
+        border-radius: 0.3em;
+    }
+/* -- on hover on column --*/
+    .over-set:hover .text-overlay{
+        opacity: 0;
+    }
+    .over-set:hover .overlay-detail{
+        opacity: 1;
+    }
+/* -- overlay a full size div over the column --*/
+    .overlay-detail{ 
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            font-size: 1em;
+            border: 0px solid red;
+            color:white;
+            background-color: rgba(100,100,100,0.6);
+            padding: 1.5em; 
+            transition: 1s ease;
+            opacity:0;
+    }
+/* -- overlay the text and position centre --*/
+    .text{
+        position: absolute;
+        top:50%;
+        left:0;
+        transform: translate(0%, -50%);
+        padding: 2em;
+        text-align: center;
+        cursor: default;
+    }
+/*-----------------------------------------------*/
+/*-------- text image row column set ------------*/
+.container-extras{
+        background-color: white;
+        margin-bottom: 2em;
+    }
+    .container-extras .col-md-6{
+        border: 0px solid pink;
+    }
+    .container-extras .body-text{
+        padding: 0em 0em;
+    }
+/* -- top hero style --*/
+    .hero-text{
+        position: absolute;
+        top: 90%;
+        left: 15%;
+        color: rgba(255,255,255,0.6);
+        border: 0px solid pink;
+        transform: translate(-15%, -100%);
+        /*width: 100%;*/
+        font-size: 5em;
+    }
+/* --- images --- */
+img{
+        display: block;
+    }
+    .img-fifty{
+        width:50%;
+    }
+
+
+/* ----- typography ----*/
+.feature-text{
+    font-size: 2.5em;
+    font-style: italic;
+    text-align: center;
+}
+.body-text{
+    padding: 0em 3em;
+    font-size: 1.5em;
+    text-align: justify;
+    color: rgb(100,100,100);
+    font-weight: 300;  
+}
+blockquote{
+    width:60%;
+    display: block;
+    margin:auto;
+}
+/* ----- line behind title text ------- */
+.line-bg{
+      border:0px solid pink;
+      background-image: url("images/line-grey.svg");
+      background-repeat: repeat-x;
+      background-position: center; 
+      text-align: center;
+      margin: 2em 0em;
+  }
+  .line-bg span{
+      background-color: white;
+      padding: 0em 0.5em;
+      border: 2px solid white;
+    
+  }
+  .line-bg h3{
+      padding: 0em 0em;
+      font-size: 2.5em;
+  }
+
+
+/* ----- navigation ------- */
+.nav-item{
+    background-color: rgb(0, 0, 0) !important;
+    margin: 0 0.2em;
+    padding: 0 0.4em;
+    
+
+}
+.nav-item:hover{
+    background-color: green !important;
+}
+.nav-link{
+    font-size: 1.5em;
+    color: white !important;
+}
+
+
+/*---- footer --- */
+.bottom-page{
+        height:50px;
+        background-color: rgb(0,0,0);
+    }
+
+/* -- media queries following bootstrap screen widths ----*/
+@media only screen and (max-width: 992px) {
+
+  .img-fifty{
+      width:100%;
+  }
+  .display-1{
+      font-size: 3em;;
+  }
+
+
+ 
+
+  .container-extras .body-text{
+     
+        font-size: 1.1em;
+    }
+
+
+}
+/* -- ipad fix means use 767 not 768 ---*/
+@media only screen and (max-width: 767px) {
+/* -- reduce font size title text --- */
+    .line-bg h3{
+        font-size: 2em;
+    }
+/* --- maximise body text in its container ---*/
+    .body-text{
+        padding: 0em 0em;
+    }
+/* -- reduce font size hero text --- */
+    .hero-text{
+        font-size: 2em;
+    }
+/* -- remove line behind title text --- */
+.line-bg{
+      background-image: none;
+  }
+  .line-bg span{
+      background-color: white;
+      padding: 0em 0em;
+      border: 0px solid white;
+    
+  }
+  /* --reverse flex for images on the left --- */
+    .reverse{
+        flex-direction: column-reverse;
+    }
+/* -- manage text sizing for row column set --- */
+    .container-extras .body-text{
+     
+     font-size: 1.5em;
+ }
+ .container-extras h3{
+     
+     margin-top: 1em;
+ }
+
+
+}
+
+
+</style>
+
+</head>
+
+
+<body>
+<!-- Hero -->
+<div class="container-fluid position-relative bg-dark p-3">
+    <img class="img-fluid" src="images_seidler/lounge_banner_4_1.jpg" alt="Lounge">
+    <div class="hero-text text-center">Rose Seidler House</div>
+</div>
+<!-- Nav -->
+<nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+   
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
+      <ul class="navbar-nav ">
+        <li class="nav-item rounded">
+          <a class="nav-link" href="#"> Interior </a>
+        </li>
+        <li class="nav-item rounded">
+          <a class="nav-link" href="#"> Plan </a>
+        </li>
+        <li class="nav-item rounded">
+          <a class="nav-link" href="#"> Exterior </a>
+        </li>    
+      </ul>
+    </div>  
+  </nav>
+<!-- Block Header -->
+  <div class="line-bg"> <h3><span>"The most talked about house in Sydney"</span></h3></div>
+<!-- Block -->
+<div class="container-lg">
+
+    
+    
+    <p class="body-text">When completed in 1950, the house overturned almost every convention of suburban home design.
+        The radical design both inside and out integrated architecture, art and technology in a bold and optimistic 
+        vision for a new way of living. <br/>
+        Today, still surrounded by bushland with panoramic views of Ku-ring-gai Chase National 
+        Park, the house is one of the finest examples of mid 20th-century modern domestic architecture in Australia, 
+        and its furniture and fittings form one of the most complete and intact post World War II design collections 
+        in public ownership.
+    </p>
+        <hr/>
+    <blockquote class="blockquote lead text-justify font-italic"> "When designing a house, the contemporary architect thinks of an 
+        'environment for living' rather than of empty box-like rooms ... he 
+        designs actual spaces in the interior for specific purposes and designs 
+        the furnishings and equipment that go into them."
+        <footer class="blockquote-footer text-left" >Harry Seidler- 1952</footer>
+    
+    </blockquote>
+
+   
+    <hr/>
+
+</div>
+<style>
+
+
+</style>
+<!-- Block Header -->
+<div class="line-bg"> <h3 id="interior" ><span>The Interior</span></h3></div>
+<div class="container-lg container-extras">
+    <!-- Row 1 -->
+    <div class="row align-items-center">
+        <div class="col-md-6">
+            <h3> Furniture and Furnishings</h3> 
+            <p class="body-text">
+            These form one the most important mid-century domestic 
+            design collections in Australia. </p>
+            <p class="body-text">Most of the furniture is original, 
+            either bought from the New York showrooms of Herman Miller and Knoll 
+            International or designed by Harry Seidler.</p>
+        </div>
+        <div class="col-md-6">
+                <img class="img-fluid" src="images_seidler/bedroom.jpg" alt="">
+        </div>
+    </div>
+    <!-- Row 2 -->
+    <div class="row align-items-center reverse">
+        <div class="col-md-6">
+            <img class="img-fluid" src="images_seidler/kitchen.jpg" alt="">
+        </div>
+        <div class="col-md-6">
+            <h3> The Kitchen</h3> 
+            <p class="body-text">
+                In 1950  was one of Australia’s best equipped, with a waste disposal unit 
+                and the very latest model refrigerator, stove, dishwasher, exhaust fan and Mixmaster. 
+            </p>
+            <p class="body-text">            
+                Even the Gents plastic wall clock and the Flint utensil set were the latest in 
+                industrial design.
+            </p>
+        </div>
+    </div>
+    <!-- Row 3 -->
+    <div class="row align-items-center">
+        <div class="col-md-6">
+            <h3> Bathroom</h3> 
+            <p class="body-text">
+                Rose Seidler House demonstrates the modernist belief that the 
+                quality of life can be improved by functional and flexible design. 
+            </p>
+            <p class="body-text">        
+                The uncluttered interior, lightweight features and the hard and high 
+                off the floor surfaces were easy to clean.
+            </p>
+        </div>
+        <div class="col-md-6">
+            <img class="img-fluid" src="images_seidler/bathroom.jpg" alt="">
+        </div>
+    </div>
+</div>
+<!-- Block Header -->
+<div class="line-bg"> <h3><span>The Interior</span></h3></div>
+<!-- Overlay -->
+<div class="container-fluid bg-light">
+    <div class="row">
+        <div class="col-lg-4  position-relative over-set " >
+            <img class="img-fluid" src="images_seidler/bedroom.jpg" alt="bedroom">
+            <div class="text-overlay">Bedroom</div>
+                <div class="overlay-detail">
+                    <div class="text">
+                        The furniture and furnishings form one the most important mid-century domestic 
+                        design collections in Australia.<br/>
+                        Most of the furniture is original, 
+                        either bought from the New York showrooms of Herman Miller and Knoll 
+                        International or designed by Harry Seidler
+                    </div>
+                </div>
+
+        </div>
+        <div class=" col-lg-4  position-relative over-set" >
+            <img class="img-fluid" src="images_seidler/kitchen.jpg" alt="kitchen">
+            <div class="text-overlay ">Kitchen</div>
+                <div class="overlay-detail">
+                    <div class="text">
+                        In 1950 the kitchen was one of Australia’s best equipped, with a waste disposal unit 
+                        and the very latest model refrigerator, stove, dishwasher, exhaust fan and Mixmaster.
+                        <br/>
+                        Even the Gents plastic wall clock and the Flint utensil set were the latest in 
+                        industrial design.
+                    </div>
+                </div>
+            </div>
+        <div class=" col-lg-4  position-relative over-set">
+            <img class="img-fluid" src="images_seidler/bathroom.jpg" alt="bathroom">
+            <div class="text-overlay ">Bathroom</div>
+                <div class="overlay-detail">
+                    <div class="text">
+                        Rose Seidler House demonstrates the modernist belief that the 
+                        quality of life can be improved by functional and flexible design.
+                        <br/> 
+                        The uncluttered interior, lightweight furniture and the hard and high 
+                        off the floor surfaces were easy to clean.
+                    </div>
+                </div>
+            </div>
+      </div>
+</div>
+<div class="container-lg">
+    <hr/>
+
+<p class="feature-text">The floor plan was equally modern. </p>
+<img class="img-fluid px-5  mx-auto img-fifty" src="images_seidler/floorplan.jpg" alt="floorplan">
+<p class="body-text">
+The house is divided into two distinct zones – the living or public areas and the sleeping or private areas – linked by a transitional zone 
+of a central playroom, stairs and terrace that can be used to extend either public or private areas, depending on the occasion. </p>
+
+<p class="feature-text" style="font-size: 2em;">Instead of conventional walls, there are flexible dividers:</p>
+<p class="body-text">an internal curtain which allows 
+the playroom space to be isolated from or connected to the surrounding rooms, and the bedrooms off the playroom 
+have sliding access doors, while the kitchen servery, fireplace and key pieces of furniture help to define the 
+changing focus and function of a space.
+</p>
+</div>
+<footer class="bottom-page"></footer>
+</body>
+</html>

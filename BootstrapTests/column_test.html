@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <style>
+    .container-fluid{
+        background-color: rgb(255,60,255);
+    }
+        h1, h3, h5{
+            text-align: center;
+        }
+        .container{
+            max-width:900px;
+            box-sizing: border-box;
+            border:1px solid green;
+        }
+        .col-sm-6 , .col-sm-2, .col-sm-3{
+            box-sizing: border-box;
+            border: 3px solid pink;
+        }
+        .col-md-6 , .col-md-2, .col-md-3{
+            box-sizing: border-box;
+            border: 6px solid cornflowerblue;
+        }
+        .col-7, .col-5{
+            box-sizing: border-box;
+            background-color: cornflowerblue;
+            border: 8px solid coral;
+        }
+        .col-6{
+            box-sizing: border-box;
+            background-color: indianred;
+            border: 1px solid coral;
+        }
+        .outer{
+            background-color: darkorchid;
+            padding:0;
+        }
+        
+    </style>
+</head>
+    <body>
+    <div class ="container-fluid"> <h1>Header</h1> </div>
+        <div class="container outer">
+            <img class="img-fluid" src="images/foliage.jpg">
+        
+        </div>
+        <div class="container">
+            <div class="row"> 
+            <div class="col-7">Colum 1</div>
+            <div class="col-5"> Column 2</div>
+            </div>
+            <div class="row"> 
+            <div class="col-sm-2">Column 1</div>
+            <div class="col-sm-3">Column 2</div>
+            <div class="col-sm-2">Column 3</div>
+            <div class="col-sm-3">Column 4</div>
+            <div class="col-sm-2">Column 5</div>
+            </div>
+            <div class="row"> 
+            <div class="col-md-2">Column 1</div>
+            <div class="col-md-3">Column 2</div>
+            <div class="col-md-2">Column 3</div>
+            <div class="col-md-3">Column 4</div>
+            <div class="col-md-2">Column 5</div>
+            </div>
+            <div class="row"> 
+            <div class="col-md-6 outer">
+            <!-- new grid -->    
+            <div class="container-fluid">
+            <div class="row"> 
+            <div class="col-6"><img class="img-fluid" src="images/image_fill_600_900.jpg">
+                <hr>
+                <h5>Heading Text</h5>
+                <hr>
+                </div>
+            <div class="col-6"> <img class="img-fluid" src="images/image_fill_600_900.jpg">
+                <hr>
+                <h5>Heading Text</h5>
+                <hr>
+                </div>
+            </div>
+             </div>
+            <!--end  new grid -->   
+            </div>
+            <div class="col-md-6 outer">
+            <!-- new grid -->    
+            <div class="container-fluid">
+            <div class="row"> 
+            <div class="col-6"><img class="img-fluid" src="images/image_fill_600_900.jpg">
+                <hr>
+                <h5>Heading Text</h5>
+                <hr>
+                </div>
+            <div class="col-6"> <img class="img-fluid" src="images/image_fill_600_900.jpg">
+                <hr>
+                <h5>Heading Text</h5>
+                <hr></div>
+            </div>
+             </div>
+            <!--end  new grid --> 
+            </div>
+            </div>
+        
+        
+        </div>
+    </body>
+</html>

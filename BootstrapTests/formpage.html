@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Form Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    
+<link rel="stylesheet" href="https://use.typekit.net/hzm4uxo.css">
+    
+<link rel="stylesheet" type="text/css" href="css/testStyle.css">
+    <style>
+        .navbar-nav li a:link{
+            color:#ff0000 !important;
+        }
+         .navbar-nav li a:visited{
+            color:#ff0000 !important;
+        }
+          .navbar-nav li a:hover{
+            color:#00ff00 !important;
+        }
+        .navbar a:link{
+            color: darkorange;
+        }
+        .navbar a:visited{
+            color: darkorange;
+        }
+    
+        
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm navbar-dark">
+  
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse justify-content-center"  id="collapsibleNavbar">
+    <ul class="navbar-nav justify-content-center">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>    
+    </ul>
+       </div>
+    <a class="navbar-brand" href="#">Navbar</a>
+    <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
+          <ul class="navbar-nav justify-content-center">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>    
+    </ul>
+    </div>
+ 
+    
+   
+</nav>
+   
+    <div class="container-fluid">
+  <h1>DDD DESIGN</h1>
+  <h2>The place to love fashion</h2>
+</div>
+    
+         <div class="container">
+<h6>Tell us about yourself so we can get in touch</h6>
+<form class="form-horizontal" action="/">
+<div class="form-group">
+<label class="control-label col-sm-2" for="usr">Name:</label>
+<div class="col-sm-10">
+<input type="text" class="form-control" id="usr" name="usr" placeholder="Enter your name">
+</div>
+</div>
+              <div class="form-group">
+                <label class="control-label col-sm-2" for="email">Email:</label>
+                <div class="col-sm-10">
+                  <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="control-label col-sm-2" for="pwd">Password:</label>
+                <div class="col-sm-10">
+                  <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+                </div>
+              </div>
+              <div class="form-group">
+                    <label class="control-label col-sm-2" for="ints">What are your interests?</label>
+                    <div class="col-sm-10">
+              <label class="checkbox-inline" id="ints">
+                    <input type="checkbox" value="" name="ints">Snorkelling
+                  </label>
+                  <label class="checkbox-inline">
+                    <input type="checkbox" value="" name="ints">Beaches
+                  </label>
+                  <label class="checkbox-inline">
+                    <input type="checkbox" value="" name="ints">Great Food
+                    </label>
+                    <label class="checkbox-inline">
+                    <input type="checkbox" value="" name="ints">Nature
+                    </label>
+                    <label class="checkbox-inline">
+                    <input type="checkbox" value="" name="ints">Walking
+                    </label>
+                    </div>
+                </div>
+                <div class="form-group">
+                        <label class="control-label col-sm-2" for="optradio">How old are you?:</label>
+                        <div class="col-sm-10">
+                <label class="radio-inline" id="optradio">
+                    <input type="radio" name="optradio" checked> less than 18
+                    </label>
+                    <label class="radio-inline">
+                    <input type="radio" name="optradio">18 -25
+                    </label>
+                    <label class="radio-inline">
+                    <input type="radio" name="optradio"> 25 -35
+                    </label>
+                    <label class="radio-inline">
+                    <input type="radio" name="optradio"> 35 - 45
+                    </label>
+                    <label class="radio-inline">
+                    <input type="radio" name="optradio"> 45 - 55
+                    </label>
+                    <label class="radio-inline">
+                    <input type="radio" name="optradio"> older
+                    </label>
+                      </div>
+                </div>
+              <div class="form-group">
+                    <label class="control-label col-sm-2" for="comment">How have you heard about us?</label>
+                    <div class="col-sm-10">
+                    <textarea class="form-control" rows="5" id="comment"></textarea>
+                    </div>
+                  </div>
+              <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                  <div class="checkbox">
+                    <label><input type="checkbox" name="remember"> Remember me</label>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+    <button type="submit" class="btn btn-default">Submit</button>
+                </div>
+              </div>
+            </form>
+          </div>
+
+
+</body>
+</html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Masks</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<style>
+    body{
+        font-size: 100%;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 100%;
+    }
+    p{
+        font-size: 1.5em;
+    }
+    .container{
+        max-width: 800px;
+    }
+    .extra, .base{
+        padding: 0em 2em;
+    }
+    .extra{
+        border: 0px solid blue;
+        background-color: rgb(240,240,240);
+    }
+    .base{
+        border: 0px solid plum;
+        margin-top: 1em;
+    }
+    .btn{
+        background-color: rgb(210,210,210);
+        font-weight: bold;
+        padding: 0em 0em;
+        min-width:8em
+    }
+    .btn:hover{
+        background-color: rgb(80,80,80);
+        color:rgb(255,255,255);
+    }
+    blockquote{
+        border-top: 1px dashed grey;
+        border-bottom: 1px dashed grey;
+        text-align: center;
+        font-size: 1.8em;
+        width:60%;
+        display: block;
+        margin:auto;
+
+    }
+ 
+</style>
+<script>
+    var y;
+    var x;
+    window.onload = function(){
+        // get the blocks to be made visible not visible
+        x = document.getElementsByClassName("extra");
+        // get the buttons
+        y = document.getElementsByClassName("read-button");
+    console.log("hello");
+    console.log(x);
+    console.log(y);
+    for(var i=0; i<y.length; i++){
+        y[i].addEventListener("click", change_visible)
+    }
+    for(var i=0; i< y.length; i++){
+       x[i].style.display ="none";
+       }
+
+
+    }
+
+    function change_visible(e){
+        var my_set = [3,7,9]
+        console.log(e.target);
+        for(var i=0; i < y.length ; i++){
+            if (y[i] == e.target){
+                console.log("hit = "+i);
+                if(x[i].style.display == "block"){
+                    x[i].style.display="none";
+                    y[i].innerHTML = "Read More";
+                }else{
+                    x[i].style.display="block";
+                    y[i].innerHTML = "Read Less";
+                }
+            }
+
+        }
+
+  
+ 
+       
+    }
+</script>
+</head>
+<body>
+    <div class="container">
+    <h1>STUDY ‘ENDS DEBATE’ ON MASK BENEFITS</h1>
+    <p>PANDEMIC Adam Taylor</p>
+<div class=base> 
+<p>
+WASHINGTON: The authors of a study based on a vast randomised research project in Bangladesh say their results offer the 
+best evidence yet that widespread wearing of surgical masks can limit the spread of the coronavirus in communities. 
+</p>
+</div>
+
+        <div class="clearfix">
+        <button type="button" class="btn float-right read-button">Read More</button>
+        </div>
+        <div class="extra" style="display: block;" id="extra-one">
+        <p>The research paper, which tracked more than 340,000 adults in 600 villages in rural Bangladesh, 
+        is the largest randomised study on the effectiveness of masks to limit the spread of coronavirus. </p>
+
+        <p>Its authors say this provides conclusive , real-world evidence for what laboratory work and 
+        other research already strongly suggest: mask-wearing can have a significant impact on 
+        limiting the spread of symptomatic COVID-19 . 
+        </p>
+        </div>
+
+<div class=base>
+<p>''I think this should basically end any scientific debate about whether masks 
+can be effective in combating COVID at the population level,'' Jason Abaluck, an 
+economist at Yale who helped lead the study, said. 
+</p>
+
+<blockquote>It was ‘‘a nail in the coffin’’  of the arguments against masks. </blockquote>
+
+<p>The researchers estimate that among a group of Bangladeshi adults in the study who were encouraged to 
+wear masks, maskwearing increased by 28.8 per cent after the intervention. When tracked , this group saw a 
+9.3 per cent reduction in symptomatic COVID-19 seroprevalence, meaning the virus was confirmed by bloodwork, 
+as well as a further 11.9 per cent reduction in COVID-19 symptoms. 
+</p>
+</div>
+        <div class="clearfix">
+        <button type="button" class="btn float-right read-button">Read More</button>
+        </div>
+        <div class="extra" style="display: block;">
+        <p>The study’s authors – which includes researchers from Yale, Stanford and the Bangladeshi nonprofit 
+        GreenVoice – emphasised that this did not mean masks were only 9.3 per cent effective. </p>
+
+        <p>‘‘ I think a big error would be to read this study and to say, ‘Oh, masks can only prevent 10 per cent of symptomatic infections,’ ’’ 
+        Abaluck said. 
+        The number would probably be several times higher if masking were universal, he said.</p> 
+
+        <p>The study is under peer review with the journal Science. 
+        The authors granted journalists an early look at the results because of their potential importance in global public health debates. 
+        </p>
+        </div>
+
+<div class=base>
+<p>Independent experts who were asked to look at the research praised its scale; 
+some suggested that it might be the most convincing argument yet for mask-wearing . 
+</p>
+
+<p>‘‘ This is an incredibly challenging but important study to pull off,’’ said  
+Megan Ranney, an emergency medicine physician and professor at Brown University who was not involved with this research.
+ ‘‘ Antimask people keep saying, ‘Where’s the randomised controlled trial?’ Well, here you go.’’ 
+</p>
+</div>
+
+        <div class="clearfix">
+        <button type="button" class="btn float-right read-button">Read More</button>
+        </div>
+        <div class="extra" style="display: block;">
+        <p>
+        ‘‘ It’s not just modelling or looking back at studies,’’ said Lawrence Gostin, 
+        faculty director of the O’Neill Institute for National and Global Health Law at Georgetown University, who also was not involved . 
+        ‘‘ This is the gold standard of scientific knowledge.’’ 
+        </p>
+        <p>
+        The sheer scale of the project, which began in November and concluded in April 2021, is notable. 
+        About 178,000 Bangladeshi villagers were in an intervention group and encouraged to use masks. 
+        An additional 163,000 were in a control group, where no interventions were made. 
+        </p>
+        <p>
+        The project assessed the levels of mask-wearing and physical distancing through direct observations. 
+        </p>
+        <p>
+        Mask-wearing had been mandated in Bangladesh since March 2020, though adoption remained limited. 
+        The researchers found that they were able to increase maskwearing in the intervention group from 13 per 
+        cent to 42 per cent – an increase of 28.8 percentage points. The effect 
+        was observed and found to be consistent over 10 weeks and persisted after the interventions ended. 
+        </p>
+        </div>
+
+<div class=base>
+<p>
+The group credited four interventions that helped increase mask usage in the community: 
+providing nocost masks delivered door to door; offering information about the benefits of masks; 
+reinforcement of mask-wearing ; and endorsement of masks by trusted local leaders. 
+</p>
+<p>
+‘‘ I see no reason why the interaction between the mask and the virus will behave any 
+differently in rural Bangladesh or rural Kansas or urban New York or San Francisco,’’ Gostin said. ‘‘ The biology is the same.’’ 
+The Washington Post 
+</p>
+Copyright © 2021 The Sydney Morning Herald
+</div>
+
+</div>
+
+</body>
+</html>

@@ -43,3 +43,14 @@ body{
 .navbar-nav li a:hover {
   color: #1abc9c !important;
 }
+
+.block_adjust{
+  margin-bottom: 10px;
+}
+
+.vh{
+display: block;
+margin:auto;
+margin-top: 24px;
+margin-bottom: 24px;
+}

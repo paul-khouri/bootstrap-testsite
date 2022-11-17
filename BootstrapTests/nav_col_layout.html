@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <style>
+        .bg-set{
+            background-color: rgb(87,100,200);
+        }
+        .container{
+            max-width:900px;
+            box-sizing: border-box;
+            border:1px solid green;
+            padding:0;
+        }
+        .container-fluid{
+            padding:0;
+        }
+        .row{
+            margin: 0;
+        }
+        .col-md-8 , .col-md-4, .col-md-6{
+            box-sizing: border-box;
+            border: 1px solid cornflowerblue;
+            padding:0;
+        }
+        .col-sm-6{
+            border: 2px solid pink;
+            padding: 0px;
+            position:relative;
+            overflow: hidden;
+        }
+        
+        .center-caption{
+            padding: 5px;
+            text-align: center;
+            width:100%;
+            
+        }
+        .level-two{
+            outline: 1px solid black;
+            font-size: 0.75em;
+            box-sizing: border-box;
+            margin: 10px 0;
+            padding:10px;
+            
+        }
+        .level-two >:last-child{
+            color:green;
+            margin-bottom: 0;
+        }
+        footer{
+            color: white;
+            background-color: black;
+            font-size: 0.75em;
+            text-align: right;
+            padding: 10px;
+            
+        }
+        .social-box{
+            box-sizing: border-box;
+            width:80%;
+            border: 1px solid black;
+            margin: 10px auto;
+            background-color: deepskyblue;
+            color: white;
+            text-align: center;   
+            padding: 5px;
+        }
+        .social-box >:last-child{
+            margin-bottom: 0;
+        }
+
+        
+        @media screen and (min-width: 576px) {
+            
+        .center-caption{
+            position: absolute;
+            top: 50%;
+            left: 0;
+            
+            transform: translate(0,-50%);
+        
+        }
+  
+            
+        }
+        
+    </style>
+</head>
+<body>
+
+
+
+<nav class="navbar navbar-expand-md bg-set">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>    
+    </ul>
+  </div>  
+</nav>
+<div class="container"> 
+        
+        <div class="row">
+            <div class="col-md-8">
+        
+                    <div class="container-fluid">
+                
+                        <div class="row">
+                            <div class="col-sm-6">
+            <img class="img-fluid" src="images/clouds_picture_lh.jpg" alt="Clouds">
+                            </div>
+                            <div class="col-sm-6">
+                            <div class="center-caption">
+                                <h1>Sub header//</h1>
+                                This is a div box with some writing<br>
+                                And some more writing</div>
+                            </div>
+                        </div>
+                        <div class=level-two>  
+                        
+<p><strong>Question:</strong> What places are at the top of your travel bucket list?</p>
+<p><strong>Answer:</strong> Great question! There are so many places that I’d love to visit. I’ve yet to see Morocco or Thailand and would love to do both. I’m also interested in exploring more of Mexico, particularly Mexico City, and Argentina, to see Mendoza and the Cuyo region. Tokyo is my all-time favorite and I am also dying to get back to Japan!</p>
+                        </div>
+                        
+                        
+                                                <div class="row">
+                            <div class="col-sm-6">
+            <img class="img-fluid" src="images/goat_house_cliff.jpg" alt="Cliff">
+                            </div>
+                            <div class="col-sm-6">
+                            <div class="center-caption">
+                                <h1>Sub header//</h1>
+                                This is a div box with some writing<br>
+                                And some more writing</div>
+                            </div>
+                        </div>
+                        
+                    </div>
+            
+            </div>
+    <div class="col-md-4">
+            <div class="social-box">
+        <p>YOU’VE GOT MAIL!</p>
+        <p>Sign up to received post updates, newsletters, and other exclusive content straight to your inbox! </p>
+<p>XO, BEE</p>
+                <form action="#">
+                     <div class="input-group mb-3">
+    <input type="text" class="form-control rounded-0" placeholder="Some text">
+    <div class="input-group-append">
+      <button class="btn btn-outline-primary rounded-0" type="submit"> Sign up </button>
+    </div>
+    
+  </div>
+                </form>
+        </div>
+            
+            </div>
+        
+        </div>
+    <footer> &copy; Footer 2019</footer>
+            
+</div>
+    </body>
+</html>

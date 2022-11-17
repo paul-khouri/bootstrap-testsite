@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <style>
+        body{
+            font-size: 100%;
+        }
+    .bg-set{
+            background-color: rgb(200,200,200);
+            color: rgb(0,0,0);
+        }
+        
+        .bg-dark{
+            background-color: rgb(126,185,220) !important;
+        }
+        
+        .navbar-nav li a:link{
+            color:#ffffff !important;
+        }
+         .navbar-nav li a:visited{
+            color:#ffffff !important;
+        }
+          .navbar-nav li a:hover{
+            color:rgb(222,61,106) !important;
+              background-color: rgb(100,0,100) !important;
+        }
+        .navbar a:link{
+            font-weight: bolder;
+            color: white;
+        }
+        .navbar a:visited{
+            font-weight: bolder;
+            color: white;
+        }
+        
+        .navbar-toggler {
+            background-color: rgb(255,102,203) !important;
+            
+        }
+    .navbar-toggler .navbar-toggler-icon {
+        background-image: url("svg_icon.svg");
+        }
+
+    .navbar-toggler.navbar-toggler{
+            border-color: rgb(0,0,0);
+            border-width:3px !important;
+    } 
+        
+        .container{
+            padding-top: 1.5em;
+            padding-bottom: 1.5em;
+           
+        }
+        form{
+            margin:5em;
+        }
+
+    </style>
+    <body>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>    
+    </ul>
+  </div>  
+</nav>
+        
+        
+        
+    
+        <div class="container">
+            
+            <form action="/">
+  <div class="form-group">
+    <label for="email">Email address:</label>
+    <input type="email" class="form-control" id="email">
+  </div>
+  <div class="form-group">
+    <label for="pwd">Password:</label>
+    <input type="password" class="form-control" id="pwd">
+  </div>
+  <div class="form-group form-check">
+    <label class="form-check-label">
+      <input class="form-check-input" type="checkbox"> Remember me
+    </label>
+  </div>
+                <div class="form-group">
+                     <label for="checks" style="padding-right:2em;">Password:</label>
+    <div class="form-check-inline">
+      <label class="form-check-label" for="check1">
+        <input type="checkbox" class="form-check-input" id="check1" name="vehicle1" value="something" checked>Option 1
+      </label>
+    </div>
+    <div class="form-check-inline">
+      <label class="form-check-label" for="check2">
+        <input type="checkbox" class="form-check-input" id="check2" name="vehicle2" value="something">Option 2
+      </label>
+    </div>
+    <div class="form-check-inline">
+      <label class="form-check-label">
+        <input type="checkbox" class="form-check-input" disabled>Option 3
+      </label>
+    </div>
+    <div class="form-check-inline">
+      <label class="form-check-label">
+        <input type="checkbox" class="form-check-input" disabled>Option 3
+      </label>
+    </div>
+                    </div>
+                <div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+</form>
+             <div id="accordion">
+<! --->
+    <div class="card bg-primary">
+      <div class="card-header ">
+        <a class="card-link text-light" data-toggle="collapse" href="#collapseOne">
+          <h2>U</h2>
+        </a>
+      </div>
+        
+              <div id="collapseOne" class="collapse" >
+        <div class="card-body bg-light">
+<!------------------------------------------------------------------------------------------------------->            
+<div class="card bg-success">  
+    <div class="card-header">
+         <a class="card-link text-light" data-toggle="collapse" href="#collapseOneChild">
+             User Control and Freedom----------------------------------(support , undo , redo)</a>
+        </div>
+    <div id="collapseOneChild" class="collapse" >
+        <div class="card-body bg-light">
+        <table class="table">
+            <tbody>
+<tr><td>Are users offered easy ways out of as many situations as possible?</td></tr>
+<tr><td>Are there clearly marked ‘emergency exits’ for users to leave unwanted states without having to go through several stages?</td></tr>
+<tr><td>
+    <ul>
+<li>Support for undo and redo,
+e.g. Ctrl-Z &amp; Ctrl-Y</li>
+<li>Cancel button (for dialogue boxes waiting for user input)</li>
+<li>Universal undo (can go back to the previous state)</li>
+<li>Interrupt (especially for lengthy operations), e.g. Home button, “ESC” key</li>
+<li>Quit (for leaving the program at any time)</li>
+<li>Defaults (for restoring a previous state)</li>
+</ul>
+    </td></tr>
+            </tbody>
+            </table>
+ 
+</div>
+</div>
+</div>
+            
+<!------------------------------------------------------------------------------------------------------->            
+</div>
+</div>
+</div>
+<! ---- >    
+                     <div class="card bg-primary">
+      <div class="card-header">
+        <a class="card-link text-light" data-toggle="collapse" href="#collapseTwo">
+        <h2> HAVE</h2>
+        </a>
+      </div>
+        
+              <div id="collapseTwo" class="collapse">
+        <div class="card-body bg-light">
+<!-------------------------------------------------------------------------------------------------------> 
+<div class="card bg-success">  
+    <div class="card-header">
+         <a class="card-link text-light" data-toggle="collapse" href="#collapseTwoChildOne">
+             Help users recognise, diagnose &amp; recover from errors ----------------------------------(Error messages)</a>
+        </div>
+    <div id="collapseTwoChildOne" class="collapse" >
+        <div class="card-body bg-light">
+        <table class="table">
+            <tbody>
+<tr><td>Are error messages constructive?</td></tr>
+<tr><td>Are error messages consistent in grammar, form, terminology, and abbreviations?</td></tr>
+<tr><td>Do error messages blame the system, or the user?</td></tr>
+<tr><td>Do error messages inform on the severity of the error?</td></tr>
+<tr><td>Do error messages indicate actions users need to take to correct the error?</td></tr>
+<tr><td>Does the system guide users to the place where the error occured?</td></tr>
+            </tbody>
+            </table>
+ 
+</div>
+</div>
+</div>
+
+<!------------------------------------------------------------------------------------------------------->
+<!-------------------------------------------------------------------------------------------------------> 
+<div class="card bg-success">  
+    <div class="card-header">
+         <a class="card-link text-light" data-toggle="collapse" href="#collapseTwoChildTwo">
+             Aesthetic and Minimalist Design----------------------------------(Avoid redundancy and clutter)</a>
+        </div>
+    <div id="collapseTwoChildTwo" class="collapse" >
+        <div class="card-body bg-light">
+        <table class="table">
+            <tbody>   
+<tr><td> Does the application use brief, clear language?</td></tr>
+<tr><td>Is the layout uncluttered and does it use white space?</td></tr>
+<tr><td>Does it use icons where possible? </td></tr>
+<tr><td>Do all elements have a purpose on the page or in the dialogue? </td></tr>
+<tr><td>Does the application use a simple colour scheme? </td></tr>
+<tr><td>Are error messages constructive?</td></tr>
+            </tbody>
+            </table>
+ 
+</div>
+</div>
+</div>
+
+<!-------------------------------------------------------------------------------------------------------> 
+<!-------------------------------------------------------------------------------------------------------> 
+<div class="card bg-success">  
+    <div class="card-header">
+         <a class="card-link text-light" data-toggle="collapse" href="#collapseTwoChildThree">
+             Visibility of System Status----------------------------------(Continuous and appropriate feedback)</a>
+        </div>
+    <div id="collapseTwoChildThree" class="collapse" >
+        <div class="card-body bg-light">
+        <table class="table">
+            <tbody>
+<tr><td>Do I know what the system is doing?</td></tr>
+<tr><td>Do I know why I have to wait?</td></tr>
+<tr><td>Is the process running in the background or foreground?</td></tr>
+<tr><td>Do I know how much longer I will have to wait for a result?</td></tr>
+<tr><td>Do I know how far along the process is?</td></tr>
+<tr><td>Can I see how many steps are left in a process I am working on?</td></tr>
+<tr><td>Do I know what is coming next?</td></tr>
+            </tbody>
+            </table>
+ 
+</div>
+</div>
+</div>
+
+<!-------------------------------------------------------------------------------------------------------> 
+<!-------------------------------------------------------------------------------------------------------> 
+<div class="card bg-success">  
+    <div class="card-header">
+         <a class="card-link text-light" data-toggle="collapse" href="#collapseTwoChildFour">
+             Error Prevention----------------------------------(Soft, Hard Delete)</a>
+        </div>
+    <div id="collapseTwoChildFour" class="collapse" >
+        <div class="card-body bg-light">
+        <table class="table">
+            <tbody>
+<tr><td>Do dialogue boxes pop up to ask for confirmation of impactful interactions, like deleting?</td></tr>
+<tr><td>Does the application prevent the user from choosing interactions that are wrong in a certain situation, e.g. by greying out?</td></tr>
+<tr><td>Does the UI prevent choices that could be wrong for the user task(e.g. dates in the past, double booking or purchasing...)</td></tr>
+
+            </tbody>
+            </table>
+ 
+</div>
+</div>
+</div>
+
+<!-------------------------------------------------------------------------------------------------------> 
+</div>
+</div>
+</div>
+<! ---- > 
+    <div class="card bg-primary">
+      <div class="card-header ">
+        <a class="card-link text-light" data-toggle="collapse" href="#collapseThree">
+          <h2>CHARM</h2>
+        </a>
+      </div>
+        
+              <div id="collapseThree" class="collapse" >
+        <div class="card-body bg-light">
+<!-------------------------------------------------------------------------------------------------------> 
+<div class="card bg-success">  
+    <div class="card-header">
+         <a class="card-link text-light" data-toggle="collapse" href="#collapseThreeChildOne">
+            Consistency and Standards ----------------------------------(Platform conventions)</a>
+        </div>
+    <div id="collapseThreeChildOne" class="collapse" >
+        <div class="card-body bg-light">
+        <table class="table">
+            <tbody>
+<tr><td>When thinking about, designing for or analysing for consistency, ask yourself, is the product consistent:</td></tr>
+<tr><td>
+<ul>   
+<li>Within itself?</li>
+<li>With earlier versions of the product?</li>
+<li>In its use of metaphors?</li>
+<li>With people's expectations?</li>
+</ul>
+</td></tr>
+
+<tr><td>List the standards you can identify in the UI.</td></tr>
+<tr><td>
+<ul>
+<li>What makes them consistent?</li>
+<li>Try to describe why?</li>
+</ul>
+</td>
+</tr>
+
+            </tbody>
+            </table>
+ 
+</div>
+</div>
+</div>
+
+<!------------------------------------------------------------------------------------------------------->
+<!-------------------------------------------------------------------------------------------------------> 
+<div class="card bg-success">  
+    <div class="card-header">
+         <a class="card-link text-light" data-toggle="collapse" href="#collapseThreeChildTwo">
+            Help and Documentation ----------------------------------(Information based on the user's task)</a>
+        </div>
+    <div id="collapseThreeChildTwo" class="collapse" >
+        <div class="card-body bg-light">
+        <table class="table">
+            <tbody>
+<tr><td>Can the user consult more extensive documentation?</td></tr>
+<tr><td> Is a help function always available, on each screen? </td></tr>
+<tr><td>Do functions and fields have specific help content?</td></tr>
+<tr><td> Is the help function easily searchable?</td></tr>
+<tr><td>Is the help content aligned to the user tasks, e.g. by using verbs?</td></tr>
+
+            </tbody>
+            </table>
+ 
+</div>
+</div>
+</div>
+
+<!------------------------------------------------------------------------------------------------------->
+<!-------------------------------------------------------------------------------------------------------> 
+<div class="card bg-success">  
+    <div class="card-header">
+         <a class="card-link text-light" data-toggle="collapse" href="#collapseThreeChildThree">
+            Accelerators, Flexibility and Efficieciency of Use ------------(Speed things up)</a>
+        </div>
+    <div id="collapseThreeChildThree" class="collapse" >
+        <div class="card-body bg-light">
+        <table class="table">
+            <tbody>
+<tr><td>Can a user speed up tasks with shortcut functions?</td></tr>
+<tr><td>Can an advanced user skip elements to speed up a task?</td></tr>
+<tr><td>Does the user interface use predictive text or search?</td></tr>
+<tr><td>Does the user interface show recently used functionality or files for quick access?</td></tr>
+            </tbody>
+            </table>
+ 
+</div>
+</div>
+</div>
+
+<!------------------------------------------------------------------------------------------------------->
+<!-------------------------------------------------------------------------------------------------------> 
+<div class="card bg-success">  
+    <div class="card-header">
+         <a class="card-link text-light" data-toggle="collapse" href="#collapseThreeChildFour">
+            Recognition rather than Recall ------------(Minimise user's memory load)</a>
+        </div>
+    <div id="collapseThreeChildFour" class="collapse" >
+        <div class="card-body bg-light">
+        <table class="table">
+            <tbody>
+<tr><td>Is the menu of the website or app helping you find the destination for your task easily?</td></tr>
+<tr><td>Does the application provide clear hints to choose appropriate functions?</td></tr>
+<tr><td>Does the user interface help you remember the steps of your tasks, and your progress within the task?</td></tr>
+<tr><td>Does the user interface use standard elements that make it easy to find your way?</td></tr>
+            </tbody>
+            </table>
+ 
+</div>
+</div>
+</div>
+
+<!------------------------------------------------------------------------------------------------------->
+<!-------------------------------------------------------------------------------------------------------> 
+<div class="card bg-success">  
+    <div class="card-header">
+         <a class="card-link text-light" data-toggle="collapse" href="#collapseThreeChildFive">
+            Match between system and Real World ------------(System should speak the user's language)</a>
+        </div>
+    <div id="collapseThreeChildFive" class="collapse " >
+        <div class="card-body bg-light">
+        <table class="table">
+            <tbody>
+<tr><td>Does the UI use terms based on users’ language for the task?</td></tr>
+<tr><td>Are meaningful icons and/or abbreviations used?</td></tr>
+<tr><td>Is the information the user needs presented clearly?</td></tr>
+<tr><td>Is there too little, just enough, or too much information presented at one time?</td></tr>
+<tr><td>Are there distracting elements in the UI?</td></tr>
+<tr><td>Does information appear in a natural order, and is related information graphically clustered?</td></tr>
+<tr><td>Does the order that information is accessed match user expectations?</td></tr>
+<tr><td>Is irrelevant or rarely needed information hidden until needed?</td></tr>
+            </tbody>
+            </table>
+ 
+</div>
+</div>
+</div>
+
+<!------------------------------------------------------------------------------------------------------->
+</div>
+</div>
+</div>
+<! ---- >               
+                 
+ </div>
+ </div>
+
+<footer>End of page</footer>
+       
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        </body>
