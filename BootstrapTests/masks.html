@@ -54,8 +54,8 @@
  
 </style>
 <script>
-    var y;
-    var x;
+    let y;
+    let x;
     window.onload = function(){
         // get the blocks to be made visible not visible
         x = document.getElementsByClassName("extra");
@@ -64,10 +64,10 @@
     console.log("hello");
     console.log(x);
     console.log(y);
-    for(var i=0; i<y.length; i++){
+    for(let i=0; i<y.length; i++){
         y[i].addEventListener("click", change_visible)
     }
-    for(var i=0; i< y.length; i++){
+    for(let i=0; i< y.length; i++){
        x[i].style.display ="none";
        }
 
@@ -75,12 +75,12 @@
     }
 
     function change_visible(e){
-        var my_set = [3,7,9]
+        let my_set = [3,7,9]
         console.log(e.target);
-        for(var i=0; i < y.length ; i++){
-            if (y[i] == e.target){
+        for(let i=0; i < y.length ; i++){
+            if (y[i] === e.target){
                 console.log("hit = "+i);
-                if(x[i].style.display == "block"){
+                if(x[i].style.display === "block"){
                     x[i].style.display="none";
                     y[i].innerHTML = "Read More";
                 }else{
